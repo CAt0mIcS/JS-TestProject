@@ -1,0 +1,48 @@
+#title-container {
+    font-family: "Courier New", Courier, monospace;
+    background-color: rgb(34, 134, 201);
+    color: #162029;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 7px;
+    margin: -8px;
+    user-select: none;
+}
+
+.title {
+    display: inline-block;
+}
+
+#title-btn-container {
+    text-align: center;
+    margin-top: -55px;
+}
+
+.title-btn {
+    background-color: rgb(34, 134, 201);
+    color: rgb(29, 6, 129);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+
+#black-shirt {
+    margin-top: 74px;
+    position: absolute; right: 10%;
+    user-select: none;
+}
+
+
+.color_bar {
+    background-color: orange;
+    user-select: none;
+}
+
+
+#black-shirt-bar {
+    margin-top: 580px;
+    margin-right: 450px;
+    padding: 35px;
+}

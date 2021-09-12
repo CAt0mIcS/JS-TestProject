@@ -36,8 +36,8 @@ body {
     }
 
     .container {
-        display: grid;
-        grid-template-columns: 180px auto;
+        display: grid;                      // TODO: Figure out what this does
+        grid-template-columns: 180px auto;  // TODO: Figure out what this does
         align-items: center;
 
         .logo-txt {

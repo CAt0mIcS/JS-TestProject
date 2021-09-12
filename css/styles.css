@@ -1,59 +1,76 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+:root {
+  --primary-color: #007AF3;
+  --hover-color: #00dbb7;
 }
 
+body {
+  margin: 0;
+  background: #F2F2F2;
+}
 
 .navbar {
-    background-color: rgb(34, 134, 201);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 1.5rem;
-    user-select: none;
+  background: white;
+  font-family: 'Azeret Mono';
 }
 
-
-.navbar-container {
-    display: flex;  /* Move Pagename and buttons into one line */
-    justify-content: space-between;  /* Move Pagename and buttons into one line */
-    width: 100%;  /* Move Pagename to the left and buttons to the right */
-    padding-right: 50px;
-    padding-left: 50px;
-    font-weight: bold;
+.navbar a {
+  text-decoration: none;
+  color: black;
 }
 
-
-.navbar-home {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: rgb(29, 6, 129);
+.navbar a:hover {
+  font-weight: bold;
 }
 
-
-.navbar-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding: 10px 50px 10px 10px;
+  margin: 0;
 }
 
-
-.navbar-item {
-    height: 80px;
+.navbar .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto;
+      grid-template-columns: 180px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-
-.navbar-link {
-    color: rgb(29, 6, 129);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 2rem;
-    height: 100%;
+.navbar .container .logo-txt {
+  padding-left: 10px;
 }
+
+.navbar .container .logo-txt span {
+  color: var(--primary-color);
+}
+
+.navbar .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav a {
+  padding: 0 1.5em;
+}
+
+.navbar .container .secondary-nav .go-premium {
+  padding: 0.3em 1em;
+  border-radius: 1.2em;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.navbar .container .secondary-nav .go-premium:hover {
+  background-color: var(--hover-color);
+}
+/*# sourceMappingURL=styles.css.map */

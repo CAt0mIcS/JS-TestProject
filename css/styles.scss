@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+
+:root {
+    --primary-color: #007AF3;
+    --hover-color: #00dbb7;
+}
+
+
+body {
+    margin: 0;
+    background: #F2F2F2
+}
+
+
+.navbar {
+    background: white;
+    font-family: 'Azeret Mono';
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;  // New list items to the right instead of down
+        list-style-type: none;
+        padding: 10px 50px 10px 10px;
+        margin: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        align-items: center;
+
+        .logo-txt {
+            padding-left: 10px;
+
+            span {
+                color: var(--primary-color);
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;  // Moves different nav items to the left----right
+
+            a {
+                padding: 0 1.5em;
+            }
+        }
+
+        .primary-nav {
+
+        }
+
+        .secondary-nav {
+            .go-premium {
+                padding: 0.3em 1em;
+                border-radius: 1.2em;
+                background-color: var(--primary-color);
+                color: white;
+            }
+
+            .go-premium:hover {
+                background-color: var(--hover-color);
+            }
+        }
+    }
+}

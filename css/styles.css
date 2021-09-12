@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500;600;700&display=swap");
 :root {
   --primary-color: #007AF3;
   --hover-color: #00dbb7;
@@ -12,6 +12,12 @@ body {
 .navbar {
   background: white;
   font-family: 'Azeret Mono';
+  font-size: 1.14em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 20px 50px 20px 10px;
 }
 
 .navbar a {
@@ -21,6 +27,8 @@ body {
 
 .navbar a:hover {
   font-weight: bold;
+  -webkit-transition: linear 0.22s;
+  transition: linear 0.22s;
 }
 
 .navbar ul {
@@ -28,7 +36,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  padding: 10px 50px 10px 10px;
   margin: 0;
 }
 
